@@ -21,13 +21,13 @@ const MapContent = props => {
         Ref = {props.Ref}/>
       <PriceBox/>
       <PositionButton OnPress={props.getCurrentPosition}/>
-      <ArrowButton 
+      {/*<ArrowButton 
         expand={props.expand} 
         OnPress={props.toggle} 
         Icon={props.expand}
         showTextInputPrice={props.showTextInputPrice} 
         showInputPrice={props.showInputPrice}
-        updateInputState = {props.updateInputState}/>
+      updateInputState = {props.updateInputState}/>*/}
     </View>)
 }
 

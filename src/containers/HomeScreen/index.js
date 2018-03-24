@@ -92,6 +92,31 @@ class HomeScreen extends Component {
 
   }
 
+  // watcher que vigilara la posicion actual
+  // y cambiara el marker
+  _getWatchPosition = () => {
+
+    let watchId = navigator.geolocation.watchPosition( pos => {
+      let lat = pos.coords.latitude
+      let long = pos.coords.longitude
+
+      let lastRegion = {
+        nativeEvent : {
+          coordinate : {
+            latitude : pos.coords.latitude,
+            longitude :  pos.coords.longitude
+          }
+        }
+      }
+
+
+      this.locationHandler(lastRegion)
+      
+    })
+
+  }
+
+  // Obtenemos la posicion actual
   getCurrentPosition = (event) => {
     navigator.geolocation.getCurrentPosition( pos => {
       
@@ -108,8 +133,14 @@ class HomeScreen extends Component {
 
     }, error_handler => {
       if(error_handler) alert('get current position failed')
+    },
+    {
+      enableHighAccuracy:true,
+      timeout:2000,
     })
-    
+
+    this._getWatchPosition()
+
   }
 
   locationHandler = event => {
@@ -135,6 +166,11 @@ class HomeScreen extends Component {
 
   componentDidMount () {
     this.getCurrentPosition()
+  }
+
+
+  componentWillUnmount () {
+    navigator.geolocation.clearWatch(watchId)
   }
 
   render () {
