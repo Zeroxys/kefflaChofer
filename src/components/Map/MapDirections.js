@@ -8,6 +8,11 @@ const trukerUbication = {
   longitude : -92.95624869,
 }
 
+const ubication = {
+ latitude : 17.9686,
+ longitude : -92.9725
+}
+
 const MapDirections = (props) => {
 
   const onError = (err) => {
@@ -20,7 +25,7 @@ const MapDirections = (props) => {
       strokeWidth={3}
       strokeColor="blue"
       origin={props.currentLocation}
-      destination={trukerUbication}
+      destination={props.destination}
       apikey={apikey}/>
   )
 }
