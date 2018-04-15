@@ -1,5 +1,9 @@
 [
     {
+        "merged": "/home/miguel/Dev/Mobile/keflaChofer/android/app/build/intermediates/res/merged/debug/drawable-mdpi/src_assets_client.png",
+        "source": "/home/miguel/Dev/Mobile/keflaChofer/android/app/src/main/res/drawable-mdpi/src_assets_client.png"
+    },
+    {
         "merged": "/home/miguel/Dev/Mobile/keflaChofer/android/app/build/intermediates/res/merged/debug/drawable-mdpi/src_assets_icon.png",
         "source": "/home/miguel/Dev/Mobile/keflaChofer/android/app/src/main/res/drawable-mdpi/src_assets_icon.png"
     },

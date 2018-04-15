@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import {StyleSheet,Text, View, Dimensions} from 'react-native'
+import {StyleSheet,Text, View, Dimensions, NetInfo} from 'react-native'
 
 import MapContent from '../../components/Map/MapContent'
 import ModalTicket from '../../components/Modal/Modal'
@@ -164,8 +164,20 @@ class HomeScreen extends Component {
     })
   }
 
+  getNetInfo = () => {
+    let promise  = NetInfo.isConnected.fetch().then(isConnected => {
+      return isConnected
+    }).catch( error => {
+      console.warn(error)
+    });
+
+    console.warn(Promise.resolve(promise))
+
+  }
+
   componentDidMount () {
     this.getCurrentPosition()
+    this.getNetInfo()
   }
 
 

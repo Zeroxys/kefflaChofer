@@ -1,6 +1,6 @@
 import React from 'react'
 import {StyleSheet} from 'react-native'
-import Map, {Marker} from 'react-native-maps'
+import Map, {Marker, Polygon} from 'react-native-maps'
 import Aux from '../HOC/Aux'
 import MapDirections from './MapDirections'
 import clientImg from '../../assets/client.png'
@@ -32,8 +32,23 @@ const MapView = props => {
     
     <MapDirections 
       currentLocation={props.initialRegion}
-      destination={{  latitude : 18.00375299, longitude : -92.95624869,}}/>
+      destination={{  latitude : 18.00375299, longitude : -92.95624869}}/>
     
+    <Polygon coordinates={[
+      {
+        latitude : 17.99434699, longitude : -92.92206881,
+      },
+      {
+        latitude : 17.99624493, longitude : -92.92760489
+      },
+      {
+        latitude : 18.00087137, longitude : -92.92683001
+      },
+      {
+        latitude : 17.99928568, longitude : -92.92052386
+      },
+    ]} strokeWidth ={0} fillColor={'rgba(0,0,0,0.5)'} />
+
     <MapDirections 
       currentLocation={props.initialRegion}
       destination={{ latitude : 17.9686, longitude : -92.9725}}/>
