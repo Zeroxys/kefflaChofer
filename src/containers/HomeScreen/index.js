@@ -165,13 +165,12 @@ class HomeScreen extends Component {
   }
 
   getNetInfo = () => {
-    let promise  = NetInfo.isConnected.fetch().then(isConnected => {
-      return isConnected
+    NetInfo.isConnected.fetch().then(isConnected => {
+      console.warn(isConnected)
     }).catch( error => {
       console.warn(error)
     });
 
-    console.warn(Promise.resolve(promise))
 
   }
 

@@ -47,7 +47,39 @@ const MapView = props => {
       {
         latitude : 17.99928568, longitude : -92.92052386
       },
-    ]} strokeWidth ={0} fillColor={'rgba(0,0,0,0.5)'} />
+    ]} strokeWidth ={0} fillColor={'rgba(154,243,154,0.5)'} />
+
+    <Polygon coordinates={[
+      {
+        latitude : 17.98774282, longitude : -92.9418818,
+      },
+      {
+        latitude : 17.96406694, longitude : -92.9634253
+      },
+      {
+        latitude : 17.94961493, longitude : -92.94558476
+      },
+      {
+        latitude : 17.9657611, longitude : -92.9149432
+      },
+    ]} strokeWidth ={0} fillColor={'rgba(154,187,243,0.5)'} />
+
+    <Polygon coordinates={[
+      {
+        latitude : 17.9658, longitude : -92.9149,
+      },
+      {
+        latitude : 18.00284995, longitude : -92.95799595
+      },
+      {
+        latitude : 18.03117277, longitude : -92.91900736
+      },
+      {
+        latitude : 18.00558449, longitude : -92.90691077
+      },
+    ]} strokeWidth ={0} fillColor={'rgba(247,82,110,0.5)'} />
+
+
 
     <MapDirections 
       currentLocation={props.initialRegion}

@@ -1,4 +1,4 @@
-#Thu Apr 12 13:05:02 CDT 2018
+#Sun Apr 15 09:03:35 CDT 2018
 base.0=/home/miguel/Dev/Mobile/keflaChofer/android/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main
 renamed.0=classes.dex
 file.0=/home/miguel/Dev/Mobile/keflaChofer/android/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex
