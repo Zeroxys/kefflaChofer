@@ -8,6 +8,8 @@ import LogoImg from '../../assets/gas.png'
 import LogoImg2 from '../../assets/iconGas.png'
 import Opening from './opening'
 
+import Login from '../../components/FBlogin/FbLogin'
+
 import SignupForm from './SignupForm'
 import LoginForm from './LoginForm'
 
@@ -85,7 +87,7 @@ class AuthScreen extends Component {
             ref={ ref => this.logoImgRef = ref}
             style={styles.LogoImg}
             source={LogoImg2}/>
-
+          <Login/>
           {OpeningButtons}
           {Forms}
         </View>
