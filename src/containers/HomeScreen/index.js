@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import {StyleSheet,Text, View, Dimensions, NetInfo} from 'react-native'
+import SideMenu from 'react-native-side-menu'
 
 import MapContent from '../../components/Map/MapContent'
 import ModalTicket from '../../components/Modal/Modal'
@@ -195,8 +196,21 @@ class HomeScreen extends Component {
         isClose={this.state.closeModal}/>
     } */
 
+    const menu = (
+      <View >
+        <Text>
+          Foto de perfil
+        </Text>
+        <Text>
+          OPCION 1
+        </Text>
+        <Text>
+          OPCION 2
+        </Text>
+      </View>)
+
     return (
-      <View>
+      <SideMenu menu={menu}>
         <MapContent
           marker = {this.state.marker}
           initialRegion = {this.state.currentLocation}
@@ -215,7 +229,7 @@ class HomeScreen extends Component {
           cantidadValue={this.state.controls.cantidad.value}
           updateInputState = {this._updateInputState}
           />
-      </View>
+      </SideMenu>
     )
   }
 }

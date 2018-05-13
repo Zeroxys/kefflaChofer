@@ -3,11 +3,14 @@ import {StyleSheet} from 'react-native'
 import {View, Text} from 'react-native-animatable'
 
 import ButtonRegister from '../../components/UI/Button'
+import Login from '../../components/FBlogin/FbLogin'
 
 const Opening = (props) => {
   return (
     <View style={styles.container}>
       <View style={styles.centerButton} animation={'zoomIn'} delay={3800} duration={400}>
+        <Login
+          onPress={() => props.onSignInPress()}/>
         <ButtonRegister
             color='#0277bd'
             name="INGRESAR"

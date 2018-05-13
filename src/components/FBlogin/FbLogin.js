@@ -1,6 +1,6 @@
 import React from 'react'
 import {View, Text} from 'react-native'
-import {LoginButton, LoginManager, AccessToken} from 'react-native-fbsdk'
+import {LoginButton, AccessToken, LoginManager} from 'react-native-fbsdk'
 
 LoginManager.logInWithReadPermissions(['public_profile']).then(
   function(result) {
@@ -16,27 +16,15 @@ LoginManager.logInWithReadPermissions(['public_profile']).then(
   }
 );
 
-const Login = () => {
+const Login = (props) => {
+
+  const onLoginFinished = props.onPress()
+
   return (
     <View>
       <LoginButton
-        publishPermissions={["publish_actions"]}
-        onLoginFinished={
-          (error, result) => {
-            if (error) {
-              alert("login has error: " + result.error);
-            } else if (result.isCancelled) {
-              alert("login is cancelled.");
-            } else {
-              AccessToken.getCurrentAccessToken().then(
-                (data) => {
-                  alert(data.accessToken.toString())
-                }
-              )
-            }
-          }
-        }
-      onLogoutFinished={() => alert("logout.")}/>
+        onLoginFinished= {() => onLoginFinished()}
+        onLogoutFinished={() => alert("logout.")}/>
     </View>
   )
 }

@@ -20,7 +20,8 @@ class LoginForm extends Component {
 
     let state = this.props.isLoading
 
-    return(<View
+    return(
+    <View
         animation={'fadeInUp'}
         duration={1200}
         delay={0}
@@ -31,11 +32,11 @@ class LoginForm extends Component {
             type={LoginUser}
             options={options}/>
             
-            <ButtonRegister
-              color='#5A8DFE'
-              name="INICIAR SESIÓN"
-              Login={this.props.Login}
-              isLoading={this.props.isLoading}/>
+          <ButtonRegister
+            color='#5A8DFE'
+            name="INICIAR SESIÓN"
+            Login={this.props.Login}
+            isLoading={this.props.isLoading}/>
       </View>)
   }
 }
