@@ -40,12 +40,12 @@
         "source": "/home/miguel/Dev/Mobile/keflaChofer/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/27.0.2/res/color/abc_tint_btn_checkable.xml"
     },
     {
-        "merged": "/home/miguel/Dev/Mobile/keflaChofer/android/app/build/intermediates/res/merged/debug/color/abc_secondary_text_material_dark.xml",
-        "source": "/home/miguel/Dev/Mobile/keflaChofer/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/27.0.2/res/color/abc_secondary_text_material_dark.xml"
-    },
-    {
         "merged": "/home/miguel/Dev/Mobile/keflaChofer/android/app/build/intermediates/res/merged/debug/color/abc_tint_edittext.xml",
         "source": "/home/miguel/Dev/Mobile/keflaChofer/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/27.0.2/res/color/abc_tint_edittext.xml"
+    },
+    {
+        "merged": "/home/miguel/Dev/Mobile/keflaChofer/android/app/build/intermediates/res/merged/debug/color/abc_secondary_text_material_dark.xml",
+        "source": "/home/miguel/Dev/Mobile/keflaChofer/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/27.0.2/res/color/abc_secondary_text_material_dark.xml"
     },
     {
         "merged": "/home/miguel/Dev/Mobile/keflaChofer/android/app/build/intermediates/res/merged/debug/color/common_google_signin_btn_text_dark.xml",
@@ -61,7 +61,7 @@
     },
     {
         "merged": "/home/miguel/Dev/Mobile/keflaChofer/android/app/build/intermediates/res/merged/debug/color/com_facebook_send_button_text_color.xml",
-        "source": "/home/miguel/Dev/Mobile/keflaChofer/android/app/build/intermediates/exploded-aar/com.facebook.android/facebook-share/4.32.0/res/color/com_facebook_send_button_text_color.xml"
+        "source": "/home/miguel/Dev/Mobile/keflaChofer/android/app/build/intermediates/exploded-aar/com.facebook.android/facebook-share/4.33.0/res/color/com_facebook_send_button_text_color.xml"
     },
     {
         "merged": "/home/miguel/Dev/Mobile/keflaChofer/android/app/build/intermediates/res/merged/debug/color/abc_tint_switch_track.xml",
@@ -85,7 +85,7 @@
     },
     {
         "merged": "/home/miguel/Dev/Mobile/keflaChofer/android/app/build/intermediates/res/merged/debug/color/com_facebook_button_text_color.xml",
-        "source": "/home/miguel/Dev/Mobile/keflaChofer/android/app/build/intermediates/exploded-aar/com.facebook.android/facebook-common/4.32.0/res/color/com_facebook_button_text_color.xml"
+        "source": "/home/miguel/Dev/Mobile/keflaChofer/android/app/build/intermediates/exploded-aar/com.facebook.android/facebook-common/4.33.0/res/color/com_facebook_button_text_color.xml"
     },
     {
         "merged": "/home/miguel/Dev/Mobile/keflaChofer/android/app/build/intermediates/res/merged/debug/color/abc_search_url_text.xml",

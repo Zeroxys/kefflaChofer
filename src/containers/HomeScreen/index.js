@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import {StyleSheet,Text, View, Dimensions, NetInfo} from 'react-native'
+import {StyleSheet,Text, View, Image, Dimensions, NetInfo} from 'react-native'
 import SideMenu from 'react-native-side-menu'
 
 import MapContent from '../../components/Map/MapContent'
@@ -9,40 +9,44 @@ import validate from '../../utils/validation'
 const {width, height} = Dimensions.get('window')
 
 class HomeScreen extends Component {
-  state = {
-    currentLocation : {
-      latitude : 17.989456,
-      longitude : -92.947506,
-      latitudeDelta : 0.0122,
-      longitudeDelta : width / height * 0.0122
-    },
-
-    controls : {
-
-      kilos : {
-        value : "",
-        valid :  false,
-        validationRules : {
-          isNumber:true
+  constructor(props) {
+    super(props)
+    this.state = {
+      currentLocation : {
+        latitude : 17.989456,
+        longitude : -92.947506,
+        latitudeDelta : 0.0122,
+        longitudeDelta : width / height * 0.0122
+      },
+  
+      controls : {
+  
+        kilos : {
+          value : "",
+          valid :  false,
+          validationRules : {
+            isNumber:true
+          }
+        },
+  
+        cantidad : {
+          value : "",
+          valid :  false,
+          validationRules : {
+            isNumberInt : true
+          }
         }
       },
-
-      cantidad : {
-        value : "",
-        valid :  false,
-        validationRules : {
-          isNumberInt : true
-        }
-      }
-    },
-
-    expand : true,
-    marker : false,
-    visible : false,
-    showInputPrice : false,
-
-    visibleModal : false
+  
+      expand : true,
+      marker : false,
+      visible : false,
+      showInputPrice : false,
+  
+      visibleModal : false
+    }
   }
+
 
   _updateInputState = (key, value) => {
     this.setState( prevState => {
@@ -187,22 +191,16 @@ class HomeScreen extends Component {
 
   render () {
 
-    /*let Modal = null
-
-    if(this.state.showInputPrice) {
-      Modal = <ModalTicket 
-        visibleModal={this.state.visibleModal}
-        closeModal={this._closeModal}
-        isClose={this.state.closeModal}/>
-    } */
+    console.warn(this.props.facebookManager.picture.data.url)
 
     const menu = (
       <View >
+        <Image
+          style={{width: 50, height: 50}}
+          source={ { uri: this.props.facebookManager.picture.data.url } }
+        />
         <Text>
-          Foto de perfil
-        </Text>
-        <Text>
-          OPCION 1
+          Bienvenido {this.props.facebookManager.name}
         </Text>
         <Text>
           OPCION 2

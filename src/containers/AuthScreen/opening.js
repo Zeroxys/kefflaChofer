@@ -9,13 +9,16 @@ const Opening = (props) => {
   return (
     <View style={styles.container}>
       <View style={styles.centerButton} animation={'zoomIn'} delay={3800} duration={400}>
-        <Login
-          onPress={() => props.onSignInPress()}/>
+
+        <Login onFacebookManager={props.onFacebookManager}/>
         <ButtonRegister
             color='#0277bd'
             name="INGRESAR"
             onPress={() => props.onSignInPress()}/>
+
       </View>
+
+      <Text style={{color : 'white'}}>keflaApp derechos reservados</Text>
     </View>
   )
 }
@@ -23,10 +26,18 @@ const Opening = (props) => {
 const styles = StyleSheet.create({
   container : {
     flex: 1,
+    flexDirection : 'column',
     width : '70%',
-    height : 100,
+    height : 80,
     justifyContent : 'center',
+    alignItems : 'center',
   },
+
+  centerButton : {
+    justifyContent : 'space-around',
+    height : 100,
+    marginBottom : 20,
+  }
 });
 
 export default Opening

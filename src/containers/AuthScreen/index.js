@@ -16,7 +16,7 @@ const {width, height} = Dimensions.get('window')
 class AuthScreen extends Component {
 
   state = {
-    visibleForm : null
+    visibleForm : null,    
   }
 
   componentWillUpdate (nextProps) {
@@ -48,6 +48,7 @@ class AuthScreen extends Component {
     //Show the Buttons component
     if(!this.state.visibleForm && !this.props.isLoggedIn) {
       OpeningButtons = <Opening
+        onFacebookManager = {this.props.onFacebookManager}
         onCreateAccountPress={() => this._setVisibleForm('SIGNUP')}
         onSignInPress={() => this._setVisibleForm('LOGIN')}/>
     }
@@ -85,6 +86,7 @@ class AuthScreen extends Component {
             ref={ ref => this.logoImgRef = ref}
             style={styles.LogoImg}
             source={LogoImg2}/>
+
           {OpeningButtons}
           {Forms}
         </View>
