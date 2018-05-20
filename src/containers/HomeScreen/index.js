@@ -4,6 +4,7 @@ import SideMenu from 'react-native-side-menu'
 
 import MapContent from '../../components/Map/MapContent'
 import ModalTicket from '../../components/Modal/Modal'
+import Slide from '../../components/Slide/Slide'
 
 import validate from '../../utils/validation'
 const {width, height} = Dimensions.get('window')

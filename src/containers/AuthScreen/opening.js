@@ -18,7 +18,7 @@ const Opening = (props) => {
 
       </View>
 
-      <Text style={{color : 'white'}}>keflaApp derechos reservados</Text>
+      <Text style={{color : 'white'}}>keflapp derechos reservados</Text>
     </View>
   )
 }
