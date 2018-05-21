@@ -3,7 +3,7 @@ import {StyleSheet} from 'react-native'
 import Map, {Marker, Polygon} from 'react-native-maps'
 import Aux from '../HOC/Aux'
 import MapDirections from './MapDirections'
-import clientImg from '../../assets/client.png'
+import clientImg from '../../assets/home.png'
 
 
 const MapView = props => {

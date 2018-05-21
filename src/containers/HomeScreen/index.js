@@ -1,13 +1,58 @@
 import React, {Component} from 'react'
 import {StyleSheet,Text, View, Image, Dimensions, NetInfo} from 'react-native'
 import SideMenu from 'react-native-side-menu'
+import Icon from 'react-native-vector-icons'
 
 import MapContent from '../../components/Map/MapContent'
 import ModalTicket from '../../components/Modal/Modal'
 import Slide from '../../components/Slide/Slide'
 
 import validate from '../../utils/validation'
+
 const {width, height} = Dimensions.get('window')
+const style = StyleSheet.create({
+  content : {
+    flex: 1,
+    backgroundColor : '#eeeeee',
+    display : 'flex',
+    flexDirection : 'column',
+    alignItems : 'center',
+  },
+
+  header : {
+    width : '100%',
+    height : '25%',
+    flexDirection : 'row',
+    display : 'flex',
+    backgroundColor : '#757575',
+    justifyContent : 'space-around',
+    alignItems : 'center',
+  },
+
+  profileData : {
+    marginRight : 30,
+    justifyContent : 'center',
+    display : 'flex',
+    alignItems : 'center'
+  },
+
+  block : {
+    height : '70%',
+    width : 200,
+    justifyContent : 'center',
+    justifyContent : 'space-around',
+  },
+
+  mainContent : {
+    flex: 1,
+    display : 'flex',
+    justifyContent : 'space-around',
+    alignItems : 'center',
+    flexDirection : 'column',
+    display : 'flex',
+  }
+})
+
 
 class HomeScreen extends Component {
   constructor(props) {
@@ -195,21 +240,44 @@ class HomeScreen extends Component {
     console.warn(this.props.facebookManager.picture.data.url)
 
     const menu = (
-      <View >
-        <Image
-          style={{width: 50, height: 50}}
-          source={ { uri: this.props.facebookManager.picture.data.url } }
-        />
-        <Text>
-          Bienvenido {this.props.facebookManager.name}
-        </Text>
-        <Text>
-          OPCION 2
-        </Text>
+      <View style={style.content}>
+        <View style={style.header}>
+          <Image
+            style={{width: 50, height: 50}}
+            source={ { uri: this.props.facebookManager.picture.data.url } }
+          />
+          <View style={style.profileData}>
+            <Text style={{color : 'white'}}>
+              Bienvenido
+            </Text>
+            <Text style={{color : 'white'}}>
+              {this.props.facebookManager.name}
+            </Text>
+          </View>
+        </View>
+        <View style={style.mainContent}>
+          <View style={style.block}>
+            <Text>
+              Ruta
+            </Text>
+
+            <Text>
+              Configuración
+            </Text>
+
+            <Text>
+              Ayuda
+            </Text>
+
+            <Text>
+              Legal
+            </Text>
+          </View>
+        </View>
       </View>)
 
     return (
-      <SideMenu menu={menu}>
+      <SideMenu menu={menu} isOpen={true}>
         <MapContent
           marker = {this.state.marker}
           initialRegion = {this.state.currentLocation}
