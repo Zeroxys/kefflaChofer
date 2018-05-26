@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
-import {StyleSheet,Text, View, Dimensions} from 'react-native'
+import {StyleSheet,Text, View, Dimensions, TouchableOpacity} from 'react-native'
+import Icon from 'react-native-vector-icons/Ionicons'
 
 import MapView from './MapView'
 import PositionButton from '../PositionButton/PositionButton'
@@ -19,6 +20,13 @@ const MapContent = props => {
         initialRegion={props.initialRegion}
         onPress={props.OnPress}
         Ref = {props.Ref}/>
+
+      {/*Bar menu icon*/}
+      <TouchableOpacity style={{height : 50}} onPress={props.showSlideMenu}>
+        <Icon style={{marginRight: 300, top: 15}} color= "#424242" size={38} name="md-menu"/>
+      </TouchableOpacity>
+
+
       <PriceBox/>
       <PositionButton OnPress={props.getCurrentPosition}/>
       {/*<ArrowButton 

@@ -58,6 +58,8 @@ class HomeScreen extends Component {
   constructor(props) {
     super(props)
     this.state = {
+      showSlideMenu : false,
+
       currentLocation : {
         latitude : 17.989456,
         longitude : -92.947506,
@@ -91,6 +93,12 @@ class HomeScreen extends Component {
   
       visibleModal : false
     }
+  }
+
+  _showSlideMenu = () => {
+    this.setState({
+      showSlideMenu : !this.state.showSlideMenu
+    })
   }
 
 
@@ -237,8 +245,6 @@ class HomeScreen extends Component {
 
   render () {
 
-    console.warn(this.props.facebookManager.picture.data.url)
-
     const menu = (
       <View style={style.content}>
         <View style={style.header}>
@@ -277,8 +283,9 @@ class HomeScreen extends Component {
       </View>)
 
     return (
-      <SideMenu menu={menu} isOpen={true}>
+      <SideMenu menu={menu} isOpen={this.state.showSlideMenu}>
         <MapContent
+          showSlideMenu={this._showSlideMenu}
           marker = {this.state.marker}
           initialRegion = {this.state.currentLocation}
           OnPress = {this.locationHandler}

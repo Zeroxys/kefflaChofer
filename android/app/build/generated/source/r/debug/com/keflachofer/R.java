@@ -2933,17 +2933,18 @@ containing a value of this type.
         public static final int notification_bg_normal=0x7f020092;
         public static final int notification_bg_normal_pressed=0x7f020093;
         public static final int notification_icon_background=0x7f020094;
-        public static final int notification_template_icon_bg=0x7f02009e;
-        public static final int notification_template_icon_low_bg=0x7f02009f;
+        public static final int notification_template_icon_bg=0x7f02009f;
+        public static final int notification_template_icon_low_bg=0x7f0200a0;
         public static final int notification_tile_bg=0x7f020095;
         public static final int notify_panel_notification_icon_bg=0x7f020096;
         public static final int screen=0x7f020097;
         public static final int src_assets_client=0x7f020098;
         public static final int src_assets_gas=0x7f020099;
-        public static final int src_assets_icon=0x7f02009a;
-        public static final int src_assets_icongas=0x7f02009b;
-        public static final int tooltip_frame_dark=0x7f02009c;
-        public static final int tooltip_frame_light=0x7f02009d;
+        public static final int src_assets_home=0x7f02009a;
+        public static final int src_assets_icon=0x7f02009b;
+        public static final int src_assets_icongas=0x7f02009c;
+        public static final int tooltip_frame_dark=0x7f02009d;
+        public static final int tooltip_frame_light=0x7f02009e;
     }
     public static final class id {
         public static final int ALT=0x7f0c0037;

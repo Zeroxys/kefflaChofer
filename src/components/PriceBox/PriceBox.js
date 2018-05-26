@@ -18,7 +18,7 @@ const PriceBox = () => {
 const styles = StyleSheet.create({
   gasContent : {
     marginTop : 15,
-    width  : 350,
+    width  : 250,
     padding : 10,
     backgroundColor: 'rgba(245,243,243,0.80)'
   },
