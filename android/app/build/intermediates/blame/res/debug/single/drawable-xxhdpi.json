@@ -2,5 +2,9 @@
     {
         "merged": "/home/miguel/Dev/Mobile/keflaChofer/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi/screen.png",
         "source": "/home/miguel/Dev/Mobile/keflaChofer/android/app/src/main/res/drawable-xxhdpi/screen.png"
+    },
+    {
+        "merged": "/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi/screen.png",
+        "source": "/home/miguel/Dev/kefflaChofer/android/app/src/main/res/drawable-xxhdpi/screen.png"
     }
 ]

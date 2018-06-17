@@ -1,5 +1,9 @@
 [
     {
+        "merged": "/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/res/merged/debug/mipmap-xxhdpi/ic_launcher.png",
+        "source": "/home/miguel/Dev/kefflaChofer/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
         "merged": "/home/miguel/Dev/Mobile/keflaChofer/android/app/build/intermediates/res/merged/debug/mipmap-xxhdpi/ic_launcher.png",
         "source": "/home/miguel/Dev/Mobile/keflaChofer/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
     }

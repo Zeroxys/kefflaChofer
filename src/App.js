@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, {Component, AsyncStorage} from 'react';
 import {} from 'react-native';
 import {AccessToken} from 'react-native-fbsdk'
 import SplashScreen from 'react-native-splash-screen'
@@ -27,18 +27,22 @@ class App extends Component {
     } else if (result.isCancelled) {
       alert("login is cancelled.");
     } else {
+
       AccessToken.getCurrentAccessToken().then(
         (data) => {
+
           axios.get(`https://graph.facebook.com/v3.0/me?fields=id,name,picture&access_token=${data.accessToken}`).then( res => {
-            this.setState( prevState => {
+            
+            this.setState(prevState => {
               return {
                 facebookManager : prevState.facebookManager = {...res.data},
                 isAppReady : prevState.isAppReady = true,
                 isLoggedIn : prevState.isLoggedIn = true
-              }
+              } 
             })
+                               
           }).catch (err => {
-            return console.warn(err)
+            return console.warn('err' + err)
           })
         }
       )

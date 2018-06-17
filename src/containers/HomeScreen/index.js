@@ -1,11 +1,8 @@
 import React, {Component} from 'react'
 import {StyleSheet,Text, View, Image, Dimensions, NetInfo} from 'react-native'
 import SideMenu from 'react-native-side-menu'
-import Icon from 'react-native-vector-icons'
 
 import MapContent from '../../components/Map/MapContent'
-import ModalTicket from '../../components/Modal/Modal'
-import Slide from '../../components/Slide/Slide'
 
 import validate from '../../utils/validation'
 
@@ -229,8 +226,6 @@ class HomeScreen extends Component {
     }).catch( error => {
       console.warn(error)
     });
-
-
   }
 
   componentDidMount () {
@@ -277,6 +272,10 @@ class HomeScreen extends Component {
 
             <Text>
               Legal
+            </Text>
+
+            <Text>
+              Cerrar Sesion
             </Text>
           </View>
         </View>

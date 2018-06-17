@@ -4,16 +4,40 @@
         "source": "/home/miguel/Dev/Mobile/keflaChofer/android/app/src/main/res/drawable-mdpi/src_assets_client.png"
     },
     {
+        "merged": "/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/res/merged/debug/drawable-mdpi/src_assets_home.png",
+        "source": "/home/miguel/Dev/kefflaChofer/android/app/src/main/res/drawable-mdpi/src_assets_home.png"
+    },
+    {
         "merged": "/home/miguel/Dev/Mobile/keflaChofer/android/app/build/intermediates/res/merged/debug/drawable-mdpi/src_assets_icon.png",
         "source": "/home/miguel/Dev/Mobile/keflaChofer/android/app/src/main/res/drawable-mdpi/src_assets_icon.png"
+    },
+    {
+        "merged": "/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/res/merged/debug/drawable-mdpi/src_assets_icon.png",
+        "source": "/home/miguel/Dev/kefflaChofer/android/app/src/main/res/drawable-mdpi/src_assets_icon.png"
     },
     {
         "merged": "/home/miguel/Dev/Mobile/keflaChofer/android/app/build/intermediates/res/merged/debug/drawable-mdpi/src_assets_home.png",
         "source": "/home/miguel/Dev/Mobile/keflaChofer/android/app/src/main/res/drawable-mdpi/src_assets_home.png"
     },
     {
+        "merged": "/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/res/merged/debug/drawable-mdpi/screen.png",
+        "source": "/home/miguel/Dev/kefflaChofer/android/app/src/main/res/drawable-mdpi/screen.png"
+    },
+    {
         "merged": "/home/miguel/Dev/Mobile/keflaChofer/android/app/build/intermediates/res/merged/debug/drawable-mdpi/src_assets_gas.png",
         "source": "/home/miguel/Dev/Mobile/keflaChofer/android/app/src/main/res/drawable-mdpi/src_assets_gas.png"
+    },
+    {
+        "merged": "/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/res/merged/debug/drawable-mdpi/src_assets_icongas.png",
+        "source": "/home/miguel/Dev/kefflaChofer/android/app/src/main/res/drawable-mdpi/src_assets_icongas.png"
+    },
+    {
+        "merged": "/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/res/merged/debug/drawable-mdpi/src_assets_client.png",
+        "source": "/home/miguel/Dev/kefflaChofer/android/app/src/main/res/drawable-mdpi/src_assets_client.png"
+    },
+    {
+        "merged": "/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/res/merged/debug/drawable-mdpi/src_assets_gas.png",
+        "source": "/home/miguel/Dev/kefflaChofer/android/app/src/main/res/drawable-mdpi/src_assets_gas.png"
     },
     {
         "merged": "/home/miguel/Dev/Mobile/keflaChofer/android/app/build/intermediates/res/merged/debug/drawable-mdpi/src_assets_icongas.png",
