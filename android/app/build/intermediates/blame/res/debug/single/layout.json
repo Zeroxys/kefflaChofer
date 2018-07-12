@@ -9,7 +9,7 @@
     },
     {
         "merged": "/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/res/merged/debug/layout/com_facebook_login_fragment.xml",
-        "source": "/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/exploded-aar/com.facebook.android/facebook-common/4.33.0/res/layout/com_facebook_login_fragment.xml"
+        "source": "/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/exploded-aar/com.facebook.android/facebook-common/4.34.0/res/layout/com_facebook_login_fragment.xml"
     },
     {
         "merged": "/home/miguel/Dev/Mobile/keflaChofer/android/app/build/intermediates/res/merged/debug/layout/notification_template_big_media_custom.xml",
@@ -20,16 +20,16 @@
         "source": "/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/exploded-aar/com.android.support/support-compat/27.0.2/res/layout/notification_template_part_time.xml"
     },
     {
-        "merged": "/home/miguel/Dev/Mobile/keflaChofer/android/app/build/intermediates/res/merged/debug/layout/com_facebook_activity_layout.xml",
-        "source": "/home/miguel/Dev/Mobile/keflaChofer/android/app/build/intermediates/exploded-aar/com.facebook.android/facebook-common/4.33.0/res/layout/com_facebook_activity_layout.xml"
-    },
-    {
         "merged": "/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/res/merged/debug/layout/abc_search_dropdown_item_icons_2line.xml",
         "source": "/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/27.0.2/res/layout/abc_search_dropdown_item_icons_2line.xml"
     },
     {
+        "merged": "/home/miguel/Dev/Mobile/keflaChofer/android/app/build/intermediates/res/merged/debug/layout/com_facebook_activity_layout.xml",
+        "source": "/home/miguel/Dev/Mobile/keflaChofer/android/app/build/intermediates/exploded-aar/com.facebook.android/facebook-common/4.33.0/res/layout/com_facebook_activity_layout.xml"
+    },
+    {
         "merged": "/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/res/merged/debug/layout/com_facebook_device_auth_dialog_fragment.xml",
-        "source": "/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/exploded-aar/com.facebook.android/facebook-common/4.33.0/res/layout/com_facebook_device_auth_dialog_fragment.xml"
+        "source": "/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/exploded-aar/com.facebook.android/facebook-common/4.34.0/res/layout/com_facebook_device_auth_dialog_fragment.xml"
     },
     {
         "merged": "/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/res/merged/debug/layout/select_dialog_item_material.xml",
@@ -56,16 +56,16 @@
         "source": "/home/miguel/Dev/Mobile/keflaChofer/android/app/build/intermediates/exploded-aar/com.android.support/support-compat/27.0.2/res/layout/notification_action.xml"
     },
     {
-        "merged": "/home/miguel/Dev/Mobile/keflaChofer/android/app/build/intermediates/res/merged/debug/layout/abc_action_mode_close_item_material.xml",
-        "source": "/home/miguel/Dev/Mobile/keflaChofer/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/27.0.2/res/layout/abc_action_mode_close_item_material.xml"
+        "merged": "/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/res/merged/debug/layout/redbox_item_frame.xml",
+        "source": "/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.52.0/res/layout/redbox_item_frame.xml"
     },
     {
         "merged": "/home/miguel/Dev/Mobile/keflaChofer/android/app/build/intermediates/res/merged/debug/layout/messenger_button_send_blue_round.xml",
         "source": "/home/miguel/Dev/Mobile/keflaChofer/android/app/build/intermediates/exploded-aar/com.facebook.android/facebook-messenger/4.33.0/res/layout/messenger_button_send_blue_round.xml"
     },
     {
-        "merged": "/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/res/merged/debug/layout/redbox_item_frame.xml",
-        "source": "/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.52.0/res/layout/redbox_item_frame.xml"
+        "merged": "/home/miguel/Dev/Mobile/keflaChofer/android/app/build/intermediates/res/merged/debug/layout/abc_action_mode_close_item_material.xml",
+        "source": "/home/miguel/Dev/Mobile/keflaChofer/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/27.0.2/res/layout/abc_action_mode_close_item_material.xml"
     },
     {
         "merged": "/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/res/merged/debug/layout/notification_template_icon_group.xml",
@@ -93,7 +93,7 @@
     },
     {
         "merged": "/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/res/merged/debug/layout/com_facebook_tooltip_bubble.xml",
-        "source": "/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/exploded-aar/com.facebook.android/facebook-login/4.33.0/res/layout/com_facebook_tooltip_bubble.xml"
+        "source": "/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/exploded-aar/com.facebook.android/facebook-login/4.34.0/res/layout/com_facebook_tooltip_bubble.xml"
     },
     {
         "merged": "/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_icon.xml",
@@ -129,7 +129,7 @@
     },
     {
         "merged": "/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/res/merged/debug/layout/com_facebook_smart_device_dialog_fragment.xml",
-        "source": "/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/exploded-aar/com.facebook.android/facebook-common/4.33.0/res/layout/com_facebook_smart_device_dialog_fragment.xml"
+        "source": "/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/exploded-aar/com.facebook.android/facebook-common/4.34.0/res/layout/com_facebook_smart_device_dialog_fragment.xml"
     },
     {
         "merged": "/home/miguel/Dev/Mobile/keflaChofer/android/app/build/intermediates/res/merged/debug/layout/abc_action_bar_title_item.xml",
@@ -225,7 +225,7 @@
     },
     {
         "merged": "/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/res/merged/debug/layout/messenger_button_send_blue_round.xml",
-        "source": "/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/exploded-aar/com.facebook.android/facebook-messenger/4.33.0/res/layout/messenger_button_send_blue_round.xml"
+        "source": "/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/exploded-aar/com.facebook.android/facebook-messenger/4.34.0/res/layout/messenger_button_send_blue_round.xml"
     },
     {
         "merged": "/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/res/merged/debug/layout/notification_template_media.xml",
@@ -313,7 +313,7 @@
     },
     {
         "merged": "/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/res/merged/debug/layout/messenger_button_send_blue_large.xml",
-        "source": "/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/exploded-aar/com.facebook.android/facebook-messenger/4.33.0/res/layout/messenger_button_send_blue_large.xml"
+        "source": "/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/exploded-aar/com.facebook.android/facebook-messenger/4.34.0/res/layout/messenger_button_send_blue_large.xml"
     },
     {
         "merged": "/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/res/merged/debug/layout/notification_template_part_chronometer.xml",
@@ -329,7 +329,7 @@
     },
     {
         "merged": "/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/res/merged/debug/layout/messenger_button_send_white_large.xml",
-        "source": "/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/exploded-aar/com.facebook.android/facebook-messenger/4.33.0/res/layout/messenger_button_send_white_large.xml"
+        "source": "/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/exploded-aar/com.facebook.android/facebook-messenger/4.34.0/res/layout/messenger_button_send_white_large.xml"
     },
     {
         "merged": "/home/miguel/Dev/Mobile/keflaChofer/android/app/build/intermediates/res/merged/debug/layout/abc_search_dropdown_item_icons_2line.xml",
@@ -349,7 +349,7 @@
     },
     {
         "merged": "/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/res/merged/debug/layout/messenger_button_send_blue_small.xml",
-        "source": "/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/exploded-aar/com.facebook.android/facebook-messenger/4.33.0/res/layout/messenger_button_send_blue_small.xml"
+        "source": "/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/exploded-aar/com.facebook.android/facebook-messenger/4.34.0/res/layout/messenger_button_send_blue_small.xml"
     },
     {
         "merged": "/home/miguel/Dev/Mobile/keflaChofer/android/app/build/intermediates/res/merged/debug/layout/notification_action_tombstone.xml",
@@ -361,7 +361,7 @@
     },
     {
         "merged": "/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/res/merged/debug/layout/com_facebook_activity_layout.xml",
-        "source": "/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/exploded-aar/com.facebook.android/facebook-common/4.33.0/res/layout/com_facebook_activity_layout.xml"
+        "source": "/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/exploded-aar/com.facebook.android/facebook-common/4.34.0/res/layout/com_facebook_activity_layout.xml"
     },
     {
         "merged": "/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/res/merged/debug/layout/abc_activity_chooser_view_list_item.xml",
@@ -405,7 +405,7 @@
     },
     {
         "merged": "/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/res/merged/debug/layout/messenger_button_send_white_small.xml",
-        "source": "/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/exploded-aar/com.facebook.android/facebook-messenger/4.33.0/res/layout/messenger_button_send_white_small.xml"
+        "source": "/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/exploded-aar/com.facebook.android/facebook-messenger/4.34.0/res/layout/messenger_button_send_white_small.xml"
     },
     {
         "merged": "/home/miguel/Dev/Mobile/keflaChofer/android/app/build/intermediates/res/merged/debug/layout/abc_action_mode_bar.xml",
@@ -457,7 +457,7 @@
     },
     {
         "merged": "/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/res/merged/debug/layout/messenger_button_send_white_round.xml",
-        "source": "/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/exploded-aar/com.facebook.android/facebook-messenger/4.33.0/res/layout/messenger_button_send_white_round.xml"
+        "source": "/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/exploded-aar/com.facebook.android/facebook-messenger/4.34.0/res/layout/messenger_button_send_white_round.xml"
     },
     {
         "merged": "/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/res/merged/debug/layout/abc_screen_simple_overlay_action_mode.xml",

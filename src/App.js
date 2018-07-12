@@ -1,5 +1,5 @@
-import React, {Component, AsyncStorage} from 'react';
-import {} from 'react-native';
+import React, {Component} from 'react';
+import {AsyncStorage} from 'react-native';
 import {AccessToken} from 'react-native-fbsdk'
 import SplashScreen from 'react-native-splash-screen'
 import axios from 'axios'
@@ -21,6 +21,14 @@ class App extends Component {
     }
   }
 
+  _saveProfile = async (res) => {
+    try {
+      await AsyncStorage.setItem('@MySuperStore:key', JSON.stringify(res.data))
+    }catch (error) {
+      console.warn('error' + error)
+    }
+  }
+
   _facebookManager = (error, result) => {
     if (error) {
       alert("login has error: " + result.error);
@@ -33,6 +41,7 @@ class App extends Component {
 
           axios.get(`https://graph.facebook.com/v3.0/me?fields=id,name,picture&access_token=${data.accessToken}`).then( res => {
             
+            this._saveProfile(res)
             this.setState(prevState => {
               return {
                 facebookManager : prevState.facebookManager = {...res.data},
@@ -42,7 +51,7 @@ class App extends Component {
             })
                                
           }).catch (err => {
-            return console.warn('err' + err)
+            console.warn(err)
           })
         }
       )

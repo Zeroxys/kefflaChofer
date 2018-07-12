@@ -1,9 +1,8 @@
 import React, {Component} from 'react'
-import {StyleSheet,Text, View, Image, Dimensions, NetInfo} from 'react-native'
+import {StyleSheet,Text, View, Image, Dimensions, NetInfo, AsyncStorage} from 'react-native'
 import SideMenu from 'react-native-side-menu'
 
 import MapContent from '../../components/Map/MapContent'
-
 import validate from '../../utils/validation'
 
 const {width, height} = Dimensions.get('window')
@@ -55,8 +54,9 @@ class HomeScreen extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      showSlideMenu : false,
 
+      facebookManager : {},
+      showSlideMenu : false,
       currentLocation : {
         latitude : 17.989456,
         longitude : -92.947506,
@@ -220,39 +220,43 @@ class HomeScreen extends Component {
     })
   }
 
-  getNetInfo = () => {
-    NetInfo.isConnected.fetch().then(isConnected => {
-      console.warn(isConnected)
-    }).catch( error => {
-      console.warn(error)
-    });
+  fetchStorage = async () => {
+    let source = await AsyncStorage.getItem('@MySuperStore:key')
+    try {
+      this.setState( prevState => {
+        return {
+          facebookManager : prevState.facebookManager = source
+        }
+      })
+    } catch (e) {
+      return e
+    }
   }
 
   componentDidMount () {
+    this.fetchStorage()
     this.getCurrentPosition()
-    this.getNetInfo()
   }
-
 
   componentWillUnmount () {
     navigator.geolocation.clearWatch(watchId)
   }
 
   render () {
-
+    console.warn(this.state.facebookManager)
     const menu = (
       <View style={style.content}>
         <View style={style.header}>
           <Image
             style={{width: 50, height: 50}}
-            source={ { uri: this.props.facebookManager.picture.data.url } }
+            source={ { /*uri: this.state.facebookManager.picture.data.url */} }
           />
           <View style={style.profileData}>
             <Text style={{color : 'white'}}>
               Bienvenido
             </Text>
             <Text style={{color : 'white'}}>
-              {this.props.facebookManager.name}
+              {/*this.state.facebookManager.name*/}
             </Text>
           </View>
         </View>
