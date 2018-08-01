@@ -21,6 +21,42 @@ class App extends Component {
     }
   }
 
+
+  _Login = (value) => {
+    if(value) {
+      this.setState( prevState => {
+        return {
+          isLoading : prevState.isLoading = true
+        }
+      })
+      axios.post('http://159.65.186.61:8001/api/v1/seller/login', {
+        ...value
+      })
+      .then( res => {
+        if(res){
+          this._saveProfile('user_token', res)
+          this.setState( prevState => {
+            return {
+              isLoading : prevState.isLoading = false,
+              isLoggedIn : prevState.isLoggedIn = true
+            }
+          })
+        }
+      })
+      .catch( error => {        
+        if(error){
+          this.setState( prevState => {
+            return {
+              isLoading : prevState.isLoading = false
+            }
+          })
+          alert('El vendedor no existe')
+        }
+      })
+    }
+
+  }
+
   _saveProfile = async (res) => {
     try {
       await AsyncStorage.setItem('@MySuperStore:key', JSON.stringify(res.data))
@@ -58,7 +94,7 @@ class App extends Component {
     }
   }
 
-  //Simulate what the user is Login
+  /*//Simulate what the user is Login
   _Login = (username, password) => {
     this.setState( prevState => {
       return {
@@ -77,7 +113,7 @@ class App extends Component {
     }, 2500)
 
     //console.warn(this.state.isLoading)
-  }
+  }*/
 
   //Simulate what the user is SignUp
   _SignUp = (username, password, fullName) => {
