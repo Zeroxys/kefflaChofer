@@ -27,6 +27,8 @@ class App extends Component {
 
 
   _Login = (value) => {
+
+
     console.warn(value)
     if(value) {
       this.setState( prevState => {
@@ -38,6 +40,18 @@ class App extends Component {
         ...value
       })
       .then( res => {
+        //console.warn(res)
+
+        console.warn(res.data.data.loginResult._id)
+
+        axios.post('http://178.128.70.168:8001/api/v1/positionSeller', {
+          idSeller: res.data.data.loginResult._id,
+          "lat": "17.9978987",
+          "lng": "-92.9212252"
+        }).then( (res) => console.warn(res.data)).catch( err => console.warn('valiste'))
+
+
+
         if(res){
           this._saveProfile('user_token', res)
           this.setState( prevState => {

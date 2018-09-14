@@ -46,7 +46,11 @@ const styles = StyleSheet.create({
     flex:1,
     borderRadius : 3,
     width : width * 0.8,
+    height : 200,
+    display: 'flex',
+    justifyContent : 'space-around',
   },
+  
   link: {
     color: 'rgba(255,255,255,0.6)',
     alignSelf: 'center',

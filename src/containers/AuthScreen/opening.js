@@ -3,14 +3,14 @@ import {StyleSheet} from 'react-native'
 import {View, Text} from 'react-native-animatable'
 
 import ButtonRegister from '../../components/UI/Button'
-import Login from '../../components/FBlogin/FbLogin'
+//import Login from '../../components/FBlogin/FbLogin'
 
 const Opening = (props) => {
   return (
     <View style={styles.container}>
       <View style={styles.centerButton} animation={'zoomIn'} delay={3800} duration={400}>
 
-        <Login onFacebookManager={props.onFacebookManager}/>
+        {/*<Login onFacebookManager={props.onFacebookManager}/>*/}
         <ButtonRegister
             color='#0277bd'
             name="INGRESAR"
@@ -27,16 +27,17 @@ const styles = StyleSheet.create({
   container : {
     flex: 1,
     flexDirection : 'column',
-    width : '70%',
-    height : 80,
-    justifyContent : 'center',
+    width : '100%',
+    height : 30,
+    justifyContent : 'space-around',
     alignItems : 'center',
   },
 
   centerButton : {
-    justifyContent : 'space-around',
+    justifyContent : 'center',
     height : 100,
-    marginBottom : 20,
+    width : '70%',
+    //marginBottom : 20,
   }
 });
 

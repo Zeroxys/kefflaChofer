@@ -21,6 +21,7 @@ const MapView = props => {
 
   return (
   <Map 
+    showsCompass={false}
     style={styles.map}
     loadingIndicatorColor={'#2A56C6'}
     loadingBackgroundColor={'#2A56C6'}

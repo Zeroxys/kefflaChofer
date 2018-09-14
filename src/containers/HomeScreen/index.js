@@ -4,6 +4,9 @@ import SideMenu from 'react-native-side-menu'
 
 import MapContent from '../../components/Map/MapContent'
 import validate from '../../utils/validation'
+import OpenSocket from 'socket.io-client'
+
+const socket = OpenSocket('http://178.128.70.168:8001')
 
 const {width, height} = Dimensions.get('window')
 const style = StyleSheet.create({
@@ -184,19 +187,10 @@ class HomeScreen extends Component {
           }
         }
       }
-      
       this.locationHandler(coordsEvent)
-
     }, error_handler => {
-      if(error_handler) alert('get current position failed')
-    },
-    {
-      enableHighAccuracy:true,
-      timeout:2000,
+      if(error_handler) alert('Fallo el obtener tu posicion, asegurate de tener el gps activado')
     })
-
-    this._getWatchPosition()
-
   }
 
   locationHandler = event => {
@@ -221,6 +215,7 @@ class HomeScreen extends Component {
   }
 
   fetchStorage = async () => {
+    console.log('key para el chofer')
     let source = await AsyncStorage.getItem('@MySuperStore:key')
     try {
       this.setState( prevState => {
@@ -236,6 +231,43 @@ class HomeScreen extends Component {
   componentDidMount () {
     this.fetchStorage()
     this.getCurrentPosition()
+
+    socket.on('connection')
+
+    socket.on('selectSeller', (response) => {
+      const retorna = response
+      if(retorna[0].id === '5b9b4385d853ca522747a682'){
+        retorna[1].costumer = false
+        console.warn('este es el join que envío desde seller ', retorna)
+        socket.emit('join', retorna, function (err) {
+          if(err) {
+            alert(err)
+          }else{
+            console.warn('Se ha agregado como vendedor')
+          }
+        })
+      }
+      else{
+        console.warn('Se ha seleccionado a otro vendedor')
+      }
+     })
+     
+     socket.on('tunel', (get_seller_costumer) => {
+      console.warn('Mi costumer es',  JSON.stringify(get_seller_costumer))
+     
+      setInterval(() => {
+        socket.emit('tunel', {lat: '17.99740963', lng: '-92.9406558'}, () => {})
+      }, 5000)
+     })
+
+    /*socket.emit('createOrder', {
+      lat: '17.99740963',
+      lng: '-92.9406558',
+      quantity: '40',
+      idProducto: '5b3bfb3eaec2945dc9d17a90',
+      idCostumer: '5b440136aec2945dc9d17a92',
+    } )*/
+
   }
 
   componentWillUnmount () {
@@ -243,7 +275,6 @@ class HomeScreen extends Component {
   }
 
   render () {
-    console.warn(this.state.facebookManager)
     const menu = (
       <View style={style.content}>
         <View style={style.header}>
