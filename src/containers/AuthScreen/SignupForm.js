@@ -20,6 +20,7 @@ class SignupForm extends Component {
   }
 
   render () {
+    console.warn('loool')
     return (
       <View style={styles.container}
         animation={'fadeInUp'}

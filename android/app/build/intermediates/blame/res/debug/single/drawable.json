@@ -29,15 +29,15 @@
     },
     {
         "merged": "/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/res/merged/debug/drawable/messenger_button_blue_bg_selector.xml",
-        "source": "/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/exploded-aar/com.facebook.android/facebook-messenger/4.34.0/res/drawable/messenger_button_blue_bg_selector.xml"
+        "source": "/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/exploded-aar/com.facebook.android/facebook-messenger/4.36.0/res/drawable/messenger_button_blue_bg_selector.xml"
+    },
+    {
+        "merged": "/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/res/merged/debug/drawable/messenger_button_white_bg_round.xml",
+        "source": "/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/exploded-aar/com.facebook.android/facebook-messenger/4.36.0/res/drawable/messenger_button_white_bg_round.xml"
     },
     {
         "merged": "/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_text_light_focused.xml",
         "source": "/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/10.2.4/res/drawable/common_google_signin_btn_text_light_focused.xml"
-    },
-    {
-        "merged": "/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/res/merged/debug/drawable/messenger_button_white_bg_round.xml",
-        "source": "/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/exploded-aar/com.facebook.android/facebook-messenger/4.34.0/res/drawable/messenger_button_white_bg_round.xml"
     },
     {
         "merged": "/home/miguel/Dev/Mobile/keflaChofer/android/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_holo_dark.xml",
@@ -53,7 +53,7 @@
     },
     {
         "merged": "/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/res/merged/debug/drawable/com_facebook_button_background.xml",
-        "source": "/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/exploded-aar/com.facebook.android/facebook-common/4.34.0/res/drawable/com_facebook_button_background.xml"
+        "source": "/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/exploded-aar/com.facebook.android/facebook-common/4.36.0/res/drawable/com_facebook_button_background.xml"
     },
     {
         "merged": "/home/miguel/Dev/Mobile/keflaChofer/android/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_text_light_focused.xml",
@@ -64,12 +64,12 @@
         "source": "/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/10.2.4/res/drawable/common_google_signin_btn_text_disabled.xml"
     },
     {
-        "merged": "/home/miguel/Dev/Mobile/keflaChofer/android/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_text_disabled.xml",
-        "source": "/home/miguel/Dev/Mobile/keflaChofer/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/10.2.4/res/drawable/common_google_signin_btn_text_disabled.xml"
-    },
-    {
         "merged": "/home/miguel/Dev/Mobile/keflaChofer/android/app/build/intermediates/res/merged/debug/drawable/abc_ic_clear_material.xml",
         "source": "/home/miguel/Dev/Mobile/keflaChofer/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/27.0.2/res/drawable/abc_ic_clear_material.xml"
+    },
+    {
+        "merged": "/home/miguel/Dev/Mobile/keflaChofer/android/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_text_disabled.xml",
+        "source": "/home/miguel/Dev/Mobile/keflaChofer/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/10.2.4/res/drawable/common_google_signin_btn_text_disabled.xml"
     },
     {
         "merged": "/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/res/merged/debug/drawable/screen.png",
@@ -84,20 +84,20 @@
         "source": "/home/miguel/Dev/Mobile/keflaChofer/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/27.0.2/res/drawable/abc_cab_background_internal_bg.xml"
     },
     {
-        "merged": "/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_icon_dark_focused.xml",
-        "source": "/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/10.2.4/res/drawable/common_google_signin_btn_icon_dark_focused.xml"
-    },
-    {
         "merged": "/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/res/merged/debug/drawable/abc_btn_default_mtrl_shape.xml",
         "source": "/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/27.0.2/res/drawable/abc_btn_default_mtrl_shape.xml"
     },
     {
-        "merged": "/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_icon_light.xml",
-        "source": "/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/10.2.4/res/drawable/common_google_signin_btn_icon_light.xml"
+        "merged": "/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_icon_dark_focused.xml",
+        "source": "/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/10.2.4/res/drawable/common_google_signin_btn_icon_dark_focused.xml"
     },
     {
         "merged": "/home/miguel/Dev/Mobile/keflaChofer/android/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_icon_dark_focused.xml",
         "source": "/home/miguel/Dev/Mobile/keflaChofer/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/10.2.4/res/drawable/common_google_signin_btn_icon_dark_focused.xml"
+    },
+    {
+        "merged": "/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_icon_light.xml",
+        "source": "/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/10.2.4/res/drawable/common_google_signin_btn_icon_light.xml"
     },
     {
         "merged": "/home/miguel/Dev/Mobile/keflaChofer/android/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_text_dark.xml",
@@ -113,7 +113,7 @@
     },
     {
         "merged": "/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/res/merged/debug/drawable/com_facebook_button_send_background.xml",
-        "source": "/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/exploded-aar/com.facebook.android/facebook-share/4.34.0/res/drawable/com_facebook_button_send_background.xml"
+        "source": "/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/exploded-aar/com.facebook.android/facebook-share/4.36.0/res/drawable/com_facebook_button_send_background.xml"
     },
     {
         "merged": "/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/res/merged/debug/drawable/notification_tile_bg.xml",
@@ -157,7 +157,7 @@
     },
     {
         "merged": "/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/res/merged/debug/drawable/com_facebook_button_login_background.xml",
-        "source": "/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/exploded-aar/com.facebook.android/facebook-login/4.34.0/res/drawable/com_facebook_button_login_background.xml"
+        "source": "/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/exploded-aar/com.facebook.android/facebook-login/4.36.0/res/drawable/com_facebook_button_login_background.xml"
     },
     {
         "merged": "/home/miguel/Dev/Mobile/keflaChofer/android/app/build/intermediates/res/merged/debug/drawable/com_facebook_button_send_background.xml",
@@ -169,7 +169,7 @@
     },
     {
         "merged": "/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/res/merged/debug/drawable/com_facebook_button_login_silver_background.xml",
-        "source": "/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/exploded-aar/com.facebook.android/facebook-login/4.34.0/res/drawable/com_facebook_button_login_silver_background.xml"
+        "source": "/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/exploded-aar/com.facebook.android/facebook-login/4.36.0/res/drawable/com_facebook_button_login_silver_background.xml"
     },
     {
         "merged": "/home/miguel/Dev/Mobile/keflaChofer/android/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_text_light_normal.xml",
@@ -177,7 +177,7 @@
     },
     {
         "merged": "/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/res/merged/debug/drawable/com_facebook_auth_dialog_header_background.xml",
-        "source": "/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/exploded-aar/com.facebook.android/facebook-common/4.34.0/res/drawable/com_facebook_auth_dialog_header_background.xml"
+        "source": "/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/exploded-aar/com.facebook.android/facebook-common/4.36.0/res/drawable/com_facebook_auth_dialog_header_background.xml"
     },
     {
         "merged": "/home/miguel/Dev/Mobile/keflaChofer/android/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_text_dark_focused.xml",
@@ -193,7 +193,7 @@
     },
     {
         "merged": "/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/res/merged/debug/drawable/messenger_button_blue_bg_round.xml",
-        "source": "/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/exploded-aar/com.facebook.android/facebook-messenger/4.34.0/res/drawable/messenger_button_blue_bg_round.xml"
+        "source": "/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/exploded-aar/com.facebook.android/facebook-messenger/4.36.0/res/drawable/messenger_button_blue_bg_round.xml"
     },
     {
         "merged": "/home/miguel/Dev/Mobile/keflaChofer/android/app/build/intermediates/res/merged/debug/drawable/notification_tile_bg.xml",
@@ -245,7 +245,7 @@
     },
     {
         "merged": "/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/res/merged/debug/drawable/messenger_button_white_bg_selector.xml",
-        "source": "/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/exploded-aar/com.facebook.android/facebook-messenger/4.34.0/res/drawable/messenger_button_white_bg_selector.xml"
+        "source": "/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/exploded-aar/com.facebook.android/facebook-messenger/4.36.0/res/drawable/messenger_button_white_bg_selector.xml"
     },
     {
         "merged": "/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/res/merged/debug/drawable/abc_ic_arrow_drop_right_black_24dp.xml",
@@ -257,7 +257,7 @@
     },
     {
         "merged": "/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/res/merged/debug/drawable/com_facebook_auth_dialog_cancel_background.xml",
-        "source": "/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/exploded-aar/com.facebook.android/facebook-common/4.34.0/res/drawable/com_facebook_auth_dialog_cancel_background.xml"
+        "source": "/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/exploded-aar/com.facebook.android/facebook-common/4.36.0/res/drawable/com_facebook_auth_dialog_cancel_background.xml"
     },
     {
         "merged": "/home/miguel/Dev/Mobile/keflaChofer/android/app/build/intermediates/res/merged/debug/drawable/abc_ratingbar_material.xml",
@@ -285,7 +285,7 @@
     },
     {
         "merged": "/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/res/merged/debug/drawable/com_facebook_button_icon.xml",
-        "source": "/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/exploded-aar/com.facebook.android/facebook-common/4.34.0/res/drawable/com_facebook_button_icon.xml"
+        "source": "/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/exploded-aar/com.facebook.android/facebook-common/4.36.0/res/drawable/com_facebook_button_icon.xml"
     },
     {
         "merged": "/home/miguel/Dev/Mobile/keflaChofer/android/app/build/intermediates/res/merged/debug/drawable/abc_dialog_material_background.xml",
@@ -329,7 +329,7 @@
     },
     {
         "merged": "/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/res/merged/debug/drawable/com_facebook_favicon_blue.xml",
-        "source": "/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/exploded-aar/com.facebook.android/facebook-common/4.34.0/res/drawable/com_facebook_favicon_blue.xml"
+        "source": "/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/exploded-aar/com.facebook.android/facebook-common/4.36.0/res/drawable/com_facebook_favicon_blue.xml"
     },
     {
         "merged": "/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/res/merged/debug/drawable/abc_ic_voice_search_api_material.xml",
@@ -353,7 +353,7 @@
     },
     {
         "merged": "/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/res/merged/debug/drawable/com_facebook_auth_dialog_background.xml",
-        "source": "/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/exploded-aar/com.facebook.android/facebook-common/4.34.0/res/drawable/com_facebook_auth_dialog_background.xml"
+        "source": "/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/exploded-aar/com.facebook.android/facebook-common/4.36.0/res/drawable/com_facebook_auth_dialog_background.xml"
     },
     {
         "merged": "/home/miguel/Dev/Mobile/keflaChofer/android/app/build/intermediates/res/merged/debug/drawable/abc_ic_menu_overflow_material.xml",
@@ -417,7 +417,7 @@
     },
     {
         "merged": "/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/res/merged/debug/drawable/com_facebook_send_button_icon.xml",
-        "source": "/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/exploded-aar/com.facebook.android/facebook-share/4.34.0/res/drawable/com_facebook_send_button_icon.xml"
+        "source": "/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/exploded-aar/com.facebook.android/facebook-share/4.36.0/res/drawable/com_facebook_send_button_icon.xml"
     },
     {
         "merged": "/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/res/merged/debug/drawable/abc_edit_text_material.xml",
@@ -513,7 +513,7 @@
     },
     {
         "merged": "/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/res/merged/debug/drawable/com_facebook_button_like_background.xml",
-        "source": "/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/exploded-aar/com.facebook.android/facebook-common/4.34.0/res/drawable/com_facebook_button_like_background.xml"
+        "source": "/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/exploded-aar/com.facebook.android/facebook-common/4.36.0/res/drawable/com_facebook_button_like_background.xml"
     },
     {
         "merged": "/home/miguel/Dev/Mobile/keflaChofer/android/app/build/intermediates/res/merged/debug/drawable/abc_btn_default_mtrl_shape.xml",
@@ -525,7 +525,7 @@
     },
     {
         "merged": "/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/res/merged/debug/drawable/com_facebook_button_login_logo.xml",
-        "source": "/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/exploded-aar/com.facebook.android/facebook-login/4.34.0/res/drawable/com_facebook_button_login_logo.xml"
+        "source": "/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/exploded-aar/com.facebook.android/facebook-login/4.36.0/res/drawable/com_facebook_button_login_logo.xml"
     },
     {
         "merged": "/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/res/merged/debug/drawable/abc_cab_background_internal_bg.xml",

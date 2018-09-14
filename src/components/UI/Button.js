@@ -2,6 +2,7 @@ import React from 'React'
 import {View, TouchableOpacity, Text, StyleSheet, ActivityIndicator} from 'react-native'
 
 const ButtonRegister = (props) => {
+
   let label = null   
   let onPress = (!props.onPress && props.Login) ?  props.Login : props.onPress
 

@@ -1,11 +1,11 @@
 [
     {
-        "merged": "/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/res/merged/debug/anim/abc_popup_enter.xml",
-        "source": "/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/27.0.2/res/anim/abc_popup_enter.xml"
-    },
-    {
         "merged": "/home/miguel/Dev/Mobile/keflaChofer/android/app/build/intermediates/res/merged/debug/anim/abc_popup_exit.xml",
         "source": "/home/miguel/Dev/Mobile/keflaChofer/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/27.0.2/res/anim/abc_popup_exit.xml"
+    },
+    {
+        "merged": "/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/res/merged/debug/anim/abc_popup_enter.xml",
+        "source": "/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/27.0.2/res/anim/abc_popup_enter.xml"
     },
     {
         "merged": "/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/res/merged/debug/anim/abc_slide_in_top.xml",

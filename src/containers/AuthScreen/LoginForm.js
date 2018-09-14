@@ -7,7 +7,7 @@ import t from 'tcomb-form-native'
 import {LoginUser, formStyles, options} from '../../utils/LoginModel'
 import ButtonRegister from '../../components/UI/Button'
 
-const {height, width} = Dimensions.get('window')
+const {width} = Dimensions.get('window')
 const Form = t.form.Form
 
 class LoginForm extends Component { 
@@ -19,7 +19,6 @@ class LoginForm extends Component {
   render () {
 
     let state = this.props.isLoading
-
     return(
     <View
         animation={'fadeInUp'}
@@ -35,8 +34,10 @@ class LoginForm extends Component {
           <ButtonRegister
             color='#5A8DFE'
             name="INICIAR SESIÓN"
-            Login={this.props.Login}
+            ref = {this.refs.form}
+            Login={() => this.props.Login(this.refs.form.getValue())}
             isLoading={this.props.isLoading}/>
+
       </View>)
   }
 }

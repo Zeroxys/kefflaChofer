@@ -4,7 +4,7 @@ import Icon from 'react-native-vector-icons/Ionicons'
 
 // tcomb model user
 const LoginUser = t.struct({
-  user :t.String,
+  email :t.String,
   password : t.String
 })
 

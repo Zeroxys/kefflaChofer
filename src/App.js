@@ -7,6 +7,10 @@ import axios from 'axios'
 import AuthScreen from './containers/AuthScreen/index'
 import HomeScreen from './containers/HomeScreen/index'
 
+import OpenSocket from 'socket.io-client'
+
+const socket = OpenSocket('http://178.128.70.168:8001')
+
 class App extends Component {
 
   state = {
@@ -23,13 +27,14 @@ class App extends Component {
 
 
   _Login = (value) => {
+    console.warn(value)
     if(value) {
       this.setState( prevState => {
         return {
           isLoading : prevState.isLoading = true
         }
       })
-      axios.post('http://159.65.186.61:8001/api/v1/seller/login', {
+      axios.post('http://178.128.70.168:8001/api/v1/seller/login', {
         ...value
       })
       .then( res => {
