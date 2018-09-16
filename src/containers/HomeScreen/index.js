@@ -6,6 +6,8 @@ import MapContent from '../../components/Map/MapContent'
 import validate from '../../utils/validation'
 import OpenSocket from 'socket.io-client'
 
+//import socketConnection from '../../socket/connection'
+
 const socket = OpenSocket('http://178.128.70.168:8001')
 
 const {width, height} = Dimensions.get('window')
@@ -52,11 +54,16 @@ const style = StyleSheet.create({
   }
 })
 
-
 class HomeScreen extends Component {
   constructor(props) {
     super(props)
     this.state = {
+
+      userName : null,
+      picturePicture : null,
+      userPhone : null,
+
+      customerData : {lat: 0, lng: 0},
 
       facebookManager : {},
       showSlideMenu : false,
@@ -96,8 +103,11 @@ class HomeScreen extends Component {
   }
 
   _showSlideMenu = () => {
-    this.setState({
-      showSlideMenu : !this.state.showSlideMenu
+    console.warn(this.state.showSlideMenu)
+    this.setState( prevState => {
+      return {
+        showSlideMenu :  prevState = true
+      }
     })
   }
 
@@ -154,11 +164,9 @@ class HomeScreen extends Component {
   // watcher que vigilara la posicion actual
   // y cambiara el marker
   _getWatchPosition = () => {
-
-    let watchId = navigator.geolocation.watchPosition( pos => {
-      let lat = pos.coords.latitude
-      let long = pos.coords.longitude
-
+    
+    this.watchId = navigator.geolocation.watchPosition( (pos) => {
+      console.warn('----> position', pos.coords)
       let lastRegion = {
         nativeEvent : {
           coordinate : {
@@ -167,13 +175,11 @@ class HomeScreen extends Component {
           }
         }
       }
-
-
       this.locationHandler(lastRegion)
-      
-    })
-
-  }
+    },(error) => alert(JSON.stringify(error)),
+    { enableHighAccuracy: false, maximumAge:1, distanceFilter: 1 })
+    console.warn('WatcherId--->', this.watchId)
+    }
 
   // Obtenemos la posicion actual
   getCurrentPosition = (event) => {
@@ -194,6 +200,7 @@ class HomeScreen extends Component {
   }
 
   locationHandler = event => {
+    console.log('entramos al manejador de locaciones')
     let coords = event.nativeEvent.coordinate
 
     this.map.animateToRegion({
@@ -214,38 +221,68 @@ class HomeScreen extends Component {
     })
   }
 
-  fetchStorage = async () => {
-    console.log('key para el chofer')
-    let source = await AsyncStorage.getItem('@MySuperStore:key')
+  async getUserLogin () {
+
     try {
-      this.setState( prevState => {
-        return {
-          facebookManager : prevState.facebookManager = source
-        }
-      })
-    } catch (e) {
-      return e
-    }
+      let fbUser  = JSON.parse(await AsyncStorage.getItem('fb_token'))
+      let mailUser = JSON.parse(await AsyncStorage.getItem('user_token'))
+      console.warn('Usuario de cache ---->', mailUser.data)
+      
+      if( fbUser) {
+        this.setState(prevState => {
+          return {
+            userName : prevState.userManager = fbUser.name,
+            userPicture : prevState.userPicture = fbUser.picture.data.url,
+          }
+        })
+      }if(mailUser){
+        this.setState(prevState => {
+          return {
+            userName : prevState.userManager = mailUser.data.loginResult.name,
+            userId : prevState.userManager = mailUser.data.loginResult._id,
+            userPhone : prevState.userManager = mailUser.data.loginResult.phone,
+            userPicture : prevState.userPicture = 'http://clipground.com/images/profile-clipart-2.png'
+          }
+        })
+      }
+
+    } catch (error) {
+      console.warn(error)
+    } 
   }
 
   componentDidMount () {
-    this.fetchStorage()
+    this.getUserLogin()
     this.getCurrentPosition()
+    this._getWatchPosition()
+
+    //socketConnection()
 
     socket.on('connection')
 
     socket.on('selectSeller', (response) => {
       const retorna = response
-      if(retorna[0].id === '5b9b4385d853ca522747a682'){
+
+      if(retorna[0].id === this.state.userId){
+
+        console.warn(retorna[1])
+
+        this.setState( prevState => {
+          return {
+            customerData : prevState.customerData = {...retorna[1]}
+          }
+        })
+
         retorna[1].costumer = false
         console.warn('este es el join que envío desde seller ', retorna)
         socket.emit('join', retorna, function (err) {
           if(err) {
             alert(err)
           }else{
-            console.warn('Se ha agregado como vendedor')
+            console.warn('Se ha agregado como vendedor un vendedor muy chido')
           }
         })
+
       }
       else{
         console.warn('Se ha seleccionado a otro vendedor')
@@ -256,7 +293,7 @@ class HomeScreen extends Component {
       console.warn('Mi costumer es',  JSON.stringify(get_seller_costumer))
      
       setInterval(() => {
-        socket.emit('tunel', {lat: '17.99740963', lng: '-92.9406558'}, () => {})
+        socket.emit('tunel', {lat: this.state.currentLocation.latitude, lng: this.state.currentLocation.longitude}, () => {})
       }, 5000)
      })
 
@@ -271,7 +308,7 @@ class HomeScreen extends Component {
   }
 
   componentWillUnmount () {
-    navigator.geolocation.clearWatch(watchId)
+    navigator.geolocation.clearWatch(this.watchId)
   }
 
   render () {
@@ -280,14 +317,14 @@ class HomeScreen extends Component {
         <View style={style.header}>
           <Image
             style={{width: 50, height: 50}}
-            source={ { /*uri: this.state.facebookManager.picture.data.url */} }
+            source={ { uri: this.state.userPicture} }
           />
           <View style={style.profileData}>
             <Text style={{color : 'white'}}>
               Bienvenido
             </Text>
             <Text style={{color : 'white'}}>
-              {/*this.state.facebookManager.name*/}
+              {this.state.userName}
             </Text>
           </View>
         </View>
@@ -317,8 +354,15 @@ class HomeScreen extends Component {
       </View>)
 
     return (
-      <SideMenu menu={menu} isOpen={this.state.showSlideMenu}>
+      <SideMenu menu={menu} 
+        isOpen={false}
+        autoClosing={false}
+        disableGestures={true}>
         <MapContent
+          userName = {this.state.userName}
+          userPhone = {this.state.userPhone}
+          customerData={this.state.customerData}
+
           showSlideMenu={this._showSlideMenu}
           marker = {this.state.marker}
           initialRegion = {this.state.currentLocation}

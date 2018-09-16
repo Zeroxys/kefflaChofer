@@ -27,8 +27,6 @@ class App extends Component {
 
 
   _Login = (value) => {
-
-
     console.warn(value)
     if(value) {
       this.setState( prevState => {
@@ -41,8 +39,7 @@ class App extends Component {
       })
       .then( res => {
         //console.warn(res)
-
-        console.warn(res.data.data.loginResult._id)
+        this._saveProfile('user_token', res)
 
         axios.post('http://178.128.70.168:8001/api/v1/positionSeller', {
           idSeller: res.data.data.loginResult._id,
@@ -76,9 +73,9 @@ class App extends Component {
 
   }
 
-  _saveProfile = async (res) => {
+  _saveProfile = async (id, res) => {
     try {
-      await AsyncStorage.setItem('@MySuperStore:key', JSON.stringify(res.data))
+      await AsyncStorage.setItem(id, JSON.stringify(res.data))
     }catch (error) {
       console.warn('error' + error)
     }
@@ -150,10 +147,31 @@ class App extends Component {
 
   }
 
+  async checkUserLogin () {
+    try {
+      let fbUser  = await AsyncStorage.getItem('fb_token')
+      let mailUser = await AsyncStorage.getItem('user_token')
+
+      if( fbUser || mailUser) {
+        this.setState(prevState => {
+          return {
+            isLoggedIn : prevState.isLoggedIn = true
+          }
+        })
+      }
+    } catch (error) {
+      console.warn('error al recibir la informacion')
+    } 
+  }
+
   componentDidMount () {
     setTimeout( () => {
       SplashScreen.hide()
     },2500)
+  }
+
+  componentWillMount() {
+    this.checkUserLogin()
   }
 
   render() {
