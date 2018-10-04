@@ -261,10 +261,13 @@ class HomeScreen extends Component {
     socket.on('connection')
 
     socket.on('selectSeller', (response) => {
+
       const retorna = response
 
-      if(retorna[0].id === this.state.userId){
+      console.warn('RETORNA----> ',retorna)
 
+      if(retorna[0].id === this.state.userId){
+        retorna[1].costumer = false
         console.warn(retorna[1])
 
         this.setState( prevState => {
@@ -275,6 +278,7 @@ class HomeScreen extends Component {
 
         retorna[1].costumer = false
         console.warn('este es el join que envío desde seller ', retorna)
+        
         socket.emit('join', retorna, function (err) {
           if(err) {
             alert(err)

@@ -12,15 +12,6 @@
     </item>
     <item
         is-multidex="false"
-        jar="/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/exploded-aar/com.facebook.android/facebook-login/4.36.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.1"
-        sha1="0f5aec8dc543f3bae42c156cffe3c294c7cedd71">
-        <dex dex="/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/pre-dexed/debug/com.facebook.android-facebook-login-4.36.0_f790403c4e51fe45ed7b38dba3d81af34423ad66.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-okhttp3/1.3.0/jars/classes.jar"
         jumboMode="false"
         optimize="true"
@@ -54,6 +45,15 @@
         revision="26.0.1"
         sha1="25c8cb628374f9a2d59ff9e1172753751e9a9f84">
         <dex dex="/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-media-compat-27.0.2_6571e5e517c4713fd958289ef7aeab666ecf054a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/exploded-aar/com.facebook.android/facebook-share/4.37.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="2fdba52179163763ebd95f594bda3212409610c0">
+        <dex dex="/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/pre-dexed/debug/com.facebook.android-facebook-share-4.37.0_a7fd4c76874e10890b5ab35be03fad3cf7639306.jar" />
     </item>
     <item
         is-multidex="false"
@@ -93,24 +93,6 @@
     </item>
     <item
         is-multidex="false"
-        jar="/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/exploded-aar/com.facebook.android/facebook-share/4.36.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.1"
-        sha1="2fdba52179163763ebd95f594bda3212409610c0">
-        <dex dex="/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/pre-dexed/debug/com.facebook.android-facebook-share-4.36.0_425500ef6541f502c48f951e4242307395d0e8b4.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/exploded-aar/com.facebook.android/facebook-applinks/4.36.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.1"
-        sha1="51439f5fd81208cae8623ce21acd1ca7a73a3d33">
-        <dex dex="/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/pre-dexed/debug/com.facebook.android-facebook-applinks-4.36.0_97821dec09b8b7e23d873afbff08960ddde590d6.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/exploded-aar/keflaChofer/react-native-splash-screen/unspecified/jars/classes.jar"
         jumboMode="false"
         optimize="true"
@@ -129,21 +111,21 @@
     </item>
     <item
         is-multidex="false"
-        jar="/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.36.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.1"
-        sha1="b1c250352bb7bbd5ea1982ca5165f2a81f36b530">
-        <dex dex="/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/pre-dexed/debug/com.facebook.android-facebook-android-sdk-4.36.0_46e9ddc83a0315ee2e6ad9a97d710d4a219bc2d2.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="/home/miguel/.gradle/caches/modules-2/files-2.1/com.android.support/support-annotations/27.0.2/b9ef4342c934a1a8b107506273dc8061662a322/support-annotations-27.0.2.jar"
         jumboMode="false"
         optimize="true"
         revision="26.0.1"
         sha1="0b9ef4342c934a1a8b107506273dc8061662a322">
         <dex dex="/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/pre-dexed/debug/support-annotations-27.0.2_52ee2ffdbc23a5c88c75fb2efe051ea5f3ec32b8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/exploded-aar/com.facebook.android/facebook-marketing/4.37.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="84cae65ae807cdcd663d4744f7f39e1c51bbdff2">
+        <dex dex="/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/pre-dexed/debug/com.facebook.android-facebook-marketing-4.37.0_502d06622d396129920d36290a934e097beb467d.jar" />
     </item>
     <item
         is-multidex="false"
@@ -192,6 +174,15 @@
     </item>
     <item
         is-multidex="false"
+        jar="/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/exploded-aar/com.facebook.android/facebook-messenger/4.37.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="6d3dda07fbd30171edc150e4f13884fce5cd9926">
+        <dex dex="/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/pre-dexed/debug/com.facebook.android-facebook-messenger-4.37.0_d940325458fcb031e86f94fe524b5165d324c26a.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="/home/miguel/.gradle/caches/modules-2/files-2.1/android.arch.lifecycle/common/1.0.3/7d7f60c4783872861222166f6164215f8951c7b1/common-1.0.3.jar"
         jumboMode="false"
         optimize="true"
@@ -237,15 +228,6 @@
     </item>
     <item
         is-multidex="false"
-        jar="/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/exploded-aar/com.facebook.android/facebook-marketing/4.36.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.1"
-        sha1="9ed257b9ab7d3a6e23428aa4f8ee4759e08f6dca">
-        <dex dex="/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/pre-dexed/debug/com.facebook.android-facebook-marketing-4.36.0_d2ad1a1bf1bfbb5e6953d375106339023608ffda.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="/home/miguel/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.6.0/69edde9fc4b01c9fd51d25b83428837478c27254/okhttp-3.6.0.jar"
         jumboMode="false"
         optimize="true"
@@ -264,12 +246,12 @@
     </item>
     <item
         is-multidex="false"
-        jar="/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/exploded-aar/com.facebook.android/facebook-messenger/4.36.0/jars/classes.jar"
+        jar="/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/exploded-aar/com.facebook.android/facebook-core/4.37.0/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="26.0.1"
-        sha1="6d3dda07fbd30171edc150e4f13884fce5cd9926">
-        <dex dex="/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/pre-dexed/debug/com.facebook.android-facebook-messenger-4.36.0_91776f02db4a05e606831e7d104f72055c313c17.jar" />
+        sha1="948a59b430e662e30d1f561e5c914a652f2bfaa8">
+        <dex dex="/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/pre-dexed/debug/com.facebook.android-facebook-core-4.37.0_257747d0942da5c98ad02a3f2988a0b5d1f99d25.jar" />
     </item>
     <item
         is-multidex="false"
@@ -291,12 +273,30 @@
     </item>
     <item
         is-multidex="false"
+        jar="/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.37.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="b1c250352bb7bbd5ea1982ca5165f2a81f36b530">
+        <dex dex="/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/pre-dexed/debug/com.facebook.android-facebook-android-sdk-4.37.0_70cd2bc5678dbf8cdf9352a572d7c4183936a590.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/27.0.2/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="26.0.1"
         sha1="bcd0bcdef85b31a656af76e39c0c95ce70800772">
         <dex dex="/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-27.0.2_74151a270e5c43bc004519d7d2c31e8e9ce15a1e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/exploded-aar/com.facebook.android/facebook-login/4.37.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="0f5aec8dc543f3bae42c156cffe3c294c7cedd71">
+        <dex dex="/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/pre-dexed/debug/com.facebook.android-facebook-login-4.37.0_d68badd6ae154d0c427bcc66cb3665064cc282ae.jar" />
     </item>
     <item
         is-multidex="false"
@@ -309,30 +309,12 @@
     </item>
     <item
         is-multidex="false"
-        jar="/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/exploded-aar/com.facebook.android/facebook-common/4.36.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.1"
-        sha1="0fd4a77cde4bcaa7454c1c295100b8ceb0733415">
-        <dex dex="/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/pre-dexed/debug/com.facebook.android-facebook-common-4.36.0_e297b8f4cc7ef0ba851aa84b761e870008a0654d.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/27.0.2/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="26.0.1"
         sha1="14bfdbf5594d4d7c320de20831849050788ab1e3">
         <dex dex="/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/pre-dexed/debug/com.android.support-cardview-v7-27.0.2_92adfd2f2bb53fde28a2c21cec03dacc64871d0c.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/exploded-aar/com.facebook.android/facebook-core/4.36.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.1"
-        sha1="87791f0f9de59b57a737f4f9ea8767363662d092">
-        <dex dex="/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/pre-dexed/debug/com.facebook.android-facebook-core-4.36.0_aaef961bcc7f8da4060ba0a581cb24f9b4e737a5.jar" />
     </item>
     <item
         is-multidex="false"
@@ -360,6 +342,15 @@
         revision="26.0.1"
         sha1="48c7f54c2515a2312d3a4481d10c43fbb807f3af">
         <dex dex="/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-1.3.0_d1803247bf2929729c403607fdb23d0b2ed418d3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/exploded-aar/com.facebook.android/facebook-places/4.37.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="8484d5b4369cc7ab8d5722290ed25d134afde322">
+        <dex dex="/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/pre-dexed/debug/com.facebook.android-facebook-places-4.37.0_65687519c1facb2062f2f3cd032d9589d4a9be3a.jar" />
     </item>
     <item
         is-multidex="false"
@@ -408,12 +399,30 @@
     </item>
     <item
         is-multidex="false"
+        jar="/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/exploded-aar/com.facebook.android/facebook-applinks/4.37.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="51439f5fd81208cae8623ce21acd1ca7a73a3d33">
+        <dex dex="/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/pre-dexed/debug/com.facebook.android-facebook-applinks-4.37.0_044281f8f2d29b9c59c449453dc269e82c59cc8a.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/10.2.4/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="26.0.1"
         sha1="9ed08fab37c3a572da1d9ed2bf2e36c8d3e2bc48">
         <dex dex="/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-basement-10.2.4_b4009db91adcd005ec2912b8e647ef0a0ef5cef8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/exploded-aar/com.facebook.android/facebook-common/4.37.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="0876f2dcb8d2740568506e7f0788c466b67ec103">
+        <dex dex="/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/pre-dexed/debug/com.facebook.android-facebook-common-4.37.0_a17b374b63eac0271d7398aacd175d6dd5f48bb5.jar" />
     </item>
     <item
         is-multidex="false"
@@ -441,15 +450,6 @@
         revision="26.0.1"
         sha1="caa03787689212c10939f308a55a8dc8a3333ed2">
         <dex dex="/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-27.0.2_669739beb088c2980c4947e1a2d9c2359f61a3a7.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/exploded-aar/com.facebook.android/facebook-places/4.36.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.1"
-        sha1="8484d5b4369cc7ab8d5722290ed25d134afde322">
-        <dex dex="/home/miguel/Dev/kefflaChofer/android/app/build/intermediates/pre-dexed/debug/com.facebook.android-facebook-places-4.36.0_f64280b9e05acea69f1fbdd7a9f21647c179088d.jar" />
     </item>
     <item
         is-multidex="false"
